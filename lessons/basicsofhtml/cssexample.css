@@ -1,0 +1,161 @@
+.firstcontainer{
+	display:inline-block;
+	width:1000px;
+	height:500px;
+	position: fixed;
+	top:100px;
+	left:150px;
+	right:150px;
+	background-color:#ADD8E6;
+	border-style: solid;
+	border-radius:15px;
+	border-color:#ADD8E6;
+	z-index:-1; 
+   }
+   .head
+   {
+   	position: relative;
+   	text-align: left;
+   	left:15px;
+   	padding: 10px;
+   	max-height: 40px;
+   	font-size: 30px;
+   	top:10px;
+   	
+   }
+
+  .firsttext
+  {
+  	position: relative;
+  	left:20px;
+  	max-width: 250px;
+  	max-height:280px;
+  	padding: 20px;
+  	text-align: left;
+  	font-size:20px;
+  	top:50px;
+
+  }
+
+  .secondtext
+  {
+  	position:relative; 
+  	left:20px;
+  	max-width: 250px;
+  	padding:20px;
+  	text-align: left;
+  	font-size: 20px;
+  	color:#20B2AA;
+  	top:80px;
+  }
+
+ .insideleftcontainer{
+ 	display:inline-block;
+ 	width: 425px;
+ 	height:400px;
+ 	position:absolute;
+ 	top:50px;
+ 	left:50px;
+ 	right:525px;
+ 	bottom: 50px;
+ 	background-color:#FFFFFF;
+ 	border-style: solid;
+ 	border-color:#FFFFFF;
+ 	border-radius: 5px;z-index:1;
+ 	color:#778899;
+ 	
+
+
+
+ }
+
+
+ .insiderightcontainer{
+ 	display:inline-block;
+ 	width: 425px;
+ 	height:400px;
+ 	position:absolute;
+ 	top:50px;
+ 	left:525px;
+ 	right:20px;
+ 	bottom:50px;
+ 	background-color:#FFFFFF;
+ 	border-style: solid;
+ 	border-color:#FFFFFF;
+ 	border-radius: 10px;z-index:1;
+ 	color:#778899;;
+ } 
+ .image{
+ 	position:relative;
+ 	top:80px;
+ 	left:50px;
+ }
+
+ .img.resize{
+ 	width:350px;
+ 	height:auto;
+ }
+
+
+ .badassbox
+ {
+ 	position:absolute;
+ 	top:430px;
+ 	left:110px;
+ 	bottom:25px;
+ 	right:600px;
+
+ 	display:inline-block;
+ 	width:300;
+ 	height:50px;
+ 	background-color:#7FFF00;
+ 	border-style:solid;
+ 	border-color: #7FFF00;
+ 	z-index:2;
+ 	color:#000000;
+ 	text-align: center;
+
+
+
+ }
+
+.badasstext
+{    
+	position:relative;
+      top:04px;
+}
+.tab1
+{
+	position: fixed;
+	top:50px;
+	left:200px;
+	display:inline-block;
+	height: 50px;
+	width:150px;
+	background-color:#ADD8E6; 
+	border-color:#ADD8E6;
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	text-align: center;
+	color:#00008B;
+
+
+}
+.tab2
+{
+	position: fixed;
+	top:50px;
+	left:353px;
+	display:inline-block;
+	height:48px;
+	width:150px;
+	background-color:#FFFFFF; 
+	border-color:#ADD8E6;
+	border-bottom-color:#ADD8E6; 
+	border-style:solid;
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	text-align: center;
+
+
+}
