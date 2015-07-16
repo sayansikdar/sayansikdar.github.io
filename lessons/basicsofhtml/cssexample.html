@@ -1,62 +1,75 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="cssexample.css"
-</head>
+  
+  <head>
+
+
+
+
+
+	
+    <link rel="stylesheet"  type="text/css" href="cssexample.css">
+	<script src="cssexample.js"></script>
+ </head>
+
 <body>
-<div class="tab1" >
-   <span class="tab1text">
-   	<p><b>NEWS</b></p>
-   </span>
-</div>
-<div class="tab2" >
-   <span class="tab2text">
-   	<p><b>SUBSCRIBE</b></p>
-   </span>
-</div>
+    <div class="container">
+        <div class="tabs" id="left" onclick="s('left')">
+            <h1 class="tabss">NEWS</h1>
+        </div>
+        <div class="tabs" id="right" onclick="s('right')">
+            <h1 class="tabss">SUBSCRIBE</h2>
+        </div>
+        <div id="leftinside">
+   		    <h1 class="inside"> Welcome </h1>
+   		    <p class="upper">Simple and effective AngularJS binding for
+            FusionCharts java script charting library.Simple
+            and effective AngularJS bindings for FusonCharts
+            JavaScript Charting Library. </p>
+   		    <p class="lower">AngularJS bindings for FusonCharts
+            JavaScript Charting Library. </p>
+        </div>
 
-<div class="firstcontainer">
-	<div class="insideleftcontainer">
-		<span class="head">
-			<b>Welcome</b>
-		</span>
+        <div id="rightinside">
+   		     <h1 class="inside">Latest News</h1>
+   		     <img src="image.jpg" alt="oops" height="200" width="295"></img>
+        </div>
+             <button type="button" id="learn">LEARN MORE</button>
+   	    
 
-		<span class="firsttext">
-			
-			<p>SImple and effective AngularJS binding for
-			 FusionCharts javascript Charting LIbrary.Simple
-			 and effective AngularJS binding forFusionCharts
-			 JavaScript Charting Library.
-			</p>
-		</span>
-		<span class="secondtext"><p>
-		AngularJS binding for FusionCharts javascript charting history
-	    </p></span>
-		   
-                                
+        <div id="wrapper1">
 
+   		    <h2 class="subsription"> Subscription Form </h2>
+                <form name="myform">
+   			        <div class="left" id="lefto">
+   			            <table height="300" width="350">
+               	            <tr><td>Name</td><td><input type="text" name="name"></td></tr>
+               	            <tr><td>Email</td><td><input type="text" name="em"></td></tr>
+               	       		<tr><td>Sex</td><td><input type="radio" name="sex" value="male">Male<input type="radio" name="sex" value="female">Female</td></tr>
+                       		<tr><td>Interest</td><td><input type="checkbox"  class="checkbox" name="interest" value="football">Football<input type="checkbox" class="checkbox" name="interest" value="Movie">Movie<input type="checkbox"  class="checkbox" name="interest" value="reading">Reading</td></tr>
+                    	</table>
+               	  	
+               	 	</div>
+                	<div class="right" id="righto" height="300" width="350">
+                     	<table id="righttable">
+                        	<tr> <td>Country</td> <td><select id="country" name="country">
+                                              <option disabled selected></option>
+                                              <option value="india">india</option>
+                                              <option value="pakistan">pakistan</option>
+                                              <option value="nepal">nepal</option>
+                                              <option value="bhutan">bhutan</option>
+                                              </select></td>
+                            </tr>
+
+                        	<tr><td class="textadress">Address</td><td><textarea id="address" name="add"></textarea></td></tr>
+                     	</table>
+                	</div>
+            
+                    		<button type="button" id="subscribe" onclick="jsonval()">Subcribe</button>
+                     		<button type="reset" id="reset">Reset</button>
+            
+            	</form>
+    	</div>
 	</div>
-
-	<div class="badassbox">
-		<span class="badasstext">
-			<p><b>LEARN MORE</b></p>
-		<span>
-	</div>
-
-
-
-
-	<div class="insiderightcontainer">
-		 <span class="head">
-			<b>Latest News</b>
-		 </span>
-          
-          <span class="image">
-          	<img src='image.jpg'
-          </span>
-    </div>
-</div>
-
-
-</body>
+  </body>
 </html>
