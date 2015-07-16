@@ -170,8 +170,8 @@ h2
 {
 	position:absolute;
 	top:10px;
-	left:20px;
-	padding-bottom:10px;
+	left:40px;
+	padding-top:15px;
 	padding-right:10px;
 	margin:0px 0px 0px 0px;
 	color:#747474;
@@ -180,7 +180,7 @@ h2
 .left , .right
 {
 	position:absolute;
-	top:50px;
+	top:72px;
 	
 	
 
@@ -188,19 +188,26 @@ h2
 }
 .left
 {
-	left:20px;
+	left:40px;
 	font-size:20px;
+	color:#747474;
 }
+.left  table tr
+{
+	height:35px;
+}
+
 .right
 {
- padding-top: 15px;
- left:420px;
+ padding-top:10px;
+ left:455px;
  font-size:20px;
+ color:#747474;
 
 }
 table
 {       
-    	font-size: 17px;
+    	font-size: 22px;
     	color:#75757;
 }
 
@@ -215,8 +222,8 @@ border: 1px solid #EDEDED;
 input[type="checkbox"]
 {  
 	vertical-align: middle;
-    margin: 0px 8px 1px 8px;
     background-color: white;
+    margin-left: 8px;
 }
 input[type="radio"]
 {
@@ -224,11 +231,10 @@ input[type="radio"]
     background-color: white;
     border-radius: 10px;
 }
-#subscribe
+.subscribe , .reset
 {
     position: absolute;
     top:318px;
-    left: 642px;
     width:180px;
     height:45px;
     border:1px solid #3C3;
@@ -239,41 +245,44 @@ input[type="radio"]
     font-size: 20px;
     font-weight: bold;
 }
-#reset{
-    position: absolute;
-    top:318px;
-    left: 440px;
-    width:180px;
-    height:45px;
-    border:1px solid #3C3;
-    background-color: #3C3;
-    padding: 10px 30px 10px 30px;
-    border-radius:3px 3px 3px 3px;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
+.reset{
+    
+    
+    left:440px;
+   
 }
-select{
-    width: 270px;
-    height: 30px;
-    margin-top: 5px;
-    margin-left: 8px;
+.subscribe
+{
+	left:640px;
+}
+
+select,textarea
+{
+    width: 300px;
+    
+    margin-left:8px;
     background-color: #F3F3F3;
     border: 1px solid #EDEDED;
   
+}
+textarea
+{
+	margin-left:5px;
+    margin-top: 20px;
+    height: 100px;
+}
+
+select
+{
+    margin-top: 5px;
+    height: 30px;
+
 }
 .textadress{
 	vertical-align:middle; 
 	margin-top:20px;
 }
-#address
-{
 
-	width: 270px;
-    height: 100px;
-    margin-left:5px;
-    margin-top: 20px;
-}
 
 
     	
