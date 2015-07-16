@@ -13,6 +13,7 @@
     							document.getElementById('right').style.background='#e4efff'
     							document.getElementById('left').style.background='#ffffff'
     							document.getElementById('learn').style.visibility='hidden';
+    							document.getElementById('right').style.color='#09569d';
     							b.style.borderBottom='1px solid #e4efff';
     							a.style.borderBottom='0px solid #e4efff'
    
@@ -31,6 +32,7 @@
     							document.getElementById('right').style.background='#ffffff'
     							document.getElementById('left').style.background='#e4efff'
     							document.getElementById('learn').style.visibility='visible';
+    							document.getElementById('left').style.color='#09569d'
     							b.style.borderBottom='0px solid #BDCDEE';
     							a.style.borderBottom='1px solid #e4efff'
   								a.style.top="-51px";
@@ -38,6 +40,8 @@
    								b.style.marginTop="-1px"
     						}
 			}
+			
+			
 			function jsonval()
 			{
 				
@@ -52,7 +56,7 @@
 	      	   								if(inputElements[i].checked)
 		   										{
 		  
-	           										interest= interest+inputElements[i].value+" ";
+	           										interest= interest+inputElements[i].value+",";
 	           										//console.log(interest);		
 
 	           									}
@@ -63,24 +67,18 @@
 								
 								var country=document.myform.country.value;
 								var address=document.myform.add.value;
-								var object=[];
-								var intrest=[];
+								var object={};
 								object.name=name;
 								object.email=email;
 								object.sex=sex;
 								object.country=country;
 								object.address=address;
-								object.intrest=interest;
+								object.interest=interest;
+							    object.__proto__=null;
 							    JSON.stringify(object);
-
-
-
-							console.log(object);
-
-
-
-
-            }
+							    console.log(object);
+							
+			}
 
 
 
