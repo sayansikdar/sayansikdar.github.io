@@ -64,13 +64,13 @@
 								var country=document.myform.country.value;
 								var address=document.myform.add.value;
 								var object=[];
-								var array=[];
+								var intrest=[];
 								object.name=name;
 								object.email=email;
 								object.sex=sex;
 								object.country=country;
 								object.address=address;
-								object.arr=interest;
+								object.intrest=interest;
 							    JSON.stringify(object);
 
 

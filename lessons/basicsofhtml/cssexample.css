@@ -22,7 +22,6 @@
     border-top-right-radius: 4px;
     border:1px solid;
     
-
 }
 h1.tabss
 {
@@ -202,7 +201,7 @@ h2
 table
 {       
     	font-size: 17px;
-    	color:#75757
+    	color:#75757;
 }
 
 input[type='text']
