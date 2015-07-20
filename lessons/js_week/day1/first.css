@@ -1,0 +1,19 @@
+button
+{
+	float:left;
+	margin-right: 10px;
+}
+#first_in
+{
+	text-align: right;
+	border:0px solid white;
+}
+#second_in
+{
+	text-align: right;
+	border:0px solid white;
+}
+.outputbox
+{
+	text-align: right;
+}
