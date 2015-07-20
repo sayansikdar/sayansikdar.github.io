@@ -51,7 +51,7 @@
   width: 22%;
   border-radius:65px;
   top: 64px;
-  left: 259px;
+  left: 235px;
   position: absolute;
   
 }
@@ -68,7 +68,7 @@
 	color:grey;
 	max-width:900px;
 	height:inherit;
-	height:2000px;
+	
 
 	
 
@@ -113,9 +113,9 @@ input[type=submit]
 
 .image1,.image3,.image5,.image7
 {
-	max-width: 40%;
+	max-width:40%;
 	float:left;
-	margin-right:100px;
+	margin-right:80px;
 
 }
 .againbutton
@@ -128,7 +128,7 @@ input[type=submit]
 {
 	color:grey;
 	position: absolute;
-	top:2005px;
+	top:1630px;
 	left:400px;
 	height:500px;
 	max-width:900px;
