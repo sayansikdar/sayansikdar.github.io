@@ -66,8 +66,9 @@
     margin:0;
 	background-color: #FFFFFF;
 	color:grey;
-	max-width:900px;
+	max-width:850px;
 	height:inherit;
+	margin-right: 20px;
 	
 
 	
@@ -133,6 +134,7 @@ input[type=submit]
 	height:500px;
 	max-width:900px;
 	display:inline;
+	margin-right: 20px;
 }
 .left_footer
 {
