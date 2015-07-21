@@ -103,7 +103,7 @@ if(process=='addition')
       var inputbox=document.createElement('input');
       inputbox.setAttribute("type","text");
       inputbox.setAttribute("id",counter_div);
-      inputbox.setAttribute("class","outputbox")
+      inputbox.setAttribute("class","outputbox");
       inputbox.setAttribute("onkeyup","check(this)");
 
 //style
@@ -193,7 +193,7 @@ else if(process=='subs')
       output[counter_div]=firstinput[counter_div]-secondinput[counter_div];
 
       var inputbox=document.createElement('input');
-      inputbox.setAttribute("class","outputbox")
+      inputbox.setAttribute("class","outputbox");
       inputbox.setAttribute("type","text");
       inputbox.setAttribute("id",counter_div);
 
