@@ -79,8 +79,53 @@
 							    console.log(object);
 							
 			}
+ 
+			function stateenable()
+			{
+                               var state=new Array();
+				               state[1]=("Andra Pradesh|Arunachal Pradesh|Assam|Bihar|Chattisgarh|Goa|Gujrat|Haryana|Himachal Pradesh|jammu and kashmir|jharkhand|karnataka|Madhya Pradeshmanipur|Mizoram|Telengana|Uttar Pradesh|West Bengal");
+            	               state[2]=("janakpur|beri|gandaki|karnali|kosi|sagarmata|seti");
+
+				               
+                                var selectedCountryIndex = document.getElementById("country").selectedIndex;
+
+                                var stateElement = document.getElementById('state');
+                                stateElement.length = 0;
+                                stateElement.options[0] = new Option('Select State', '');
+                                stateElement.selectedIndex = 0;
+
+                                var state_arr = state[selectedCountryIndex].split("|");
+
+                                for (var i = 0; i < state_arr.length; i++)
+                                {
+                                   stateElement.options[stateElement.length] = new Option(state_arr[i], state_arr[i]);
+                                }
+             }
+             function modal(sex)
+             {
+             	var hiddewindown=document.getElementById("m_wrapper1");
+             	var modalwindown=document.getElementsByClassName("popupbox");
+             	var Interest=new Array();
+             	Interest[0]=("EPL|LEAGUE BBVA| SERIE A |I LEAGUE");
+             	Interest[1]=("gsa|ghsdas|dhgjsd");
+             	Interest[2]=("hagsa|hjsgj|hshsd");
+                    hiddewindown.style.visibility='visible';
+                    modalwindown.style.visibility='visible'
+                    
+                   
+                
+                }                                
+
+             
 
 
+
+
+
+            
+
+
+         
 
 
 

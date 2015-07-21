@@ -112,7 +112,7 @@ input[type=submit]
 
 }
 
-.image1,.image3,.image5,.image7
+.image1,.image3,.image5,.image7,.image2,.image4,.image6,.image8
 {
 	max-width:40%;
 	float:left;
@@ -218,12 +218,22 @@ textarea
 {
 	visibility: hidden;
 	position:absolute;
-	top:0px;
+	top:200px;
 	left:0px;
 	height:100%;
 	width: 100%;
 	text-align: center;
     background-color:#CCFF33;
 	z-index:1000;
+	opacity: 0.7;
 	
+}
+#hiddendialog
+{
+	visibility: hidden;
+	position: absolute;
+	top:210px;
+	left:30%;
+	width:300px;
+	height:300px;
 }
