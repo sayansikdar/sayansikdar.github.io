@@ -1,0 +1,48 @@
+.calci_wrapper
+{
+	
+	position:relative;
+	top:10%;
+	left:20%;
+	height:80%;
+	width:40%;
+	background-color: black;
+	margin:0;
+	margin-right:0;
+
+}
+input[type='text']
+{
+	position:absolute;
+	top:5%;
+	left:5%;
+	width:90%;
+	background-color: white;
+	height:30%;
+	text-align:right;
+	font-size:200%;
+
+
+}
+.button
+{
+	position:absolute;
+	top:45%;
+	left:11%;
+	width:80%;
+	margin:0;
+	border:0;
+}
+button
+{
+	position:relative;
+
+	float:left;
+	width:18%;
+	font-size:1.5em;
+    margin-right:2%;
+	margin-bottom: 2%;
+	background-color:#006666;
+	box-shadow:2px black;
+	border-radius: 23px;
+}
