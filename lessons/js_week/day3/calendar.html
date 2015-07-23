@@ -1,0 +1,73 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="calendar.css">
+</head>
+<body>
+<div class="container">
+	<div class="1">
+		<table>
+			<tr>
+				<td>
+					<input type="date" id="1_date">
+
+				</td>
+				<td>
+					<input type="date" id="2_date">
+                </td>
+                <tr>
+                	<td>
+                	<button type="button" onclick="eval_Date()">evalute</button>
+                	</td>
+                </tr>
+                <tr>
+                	<td>
+                	<input type="text" id="res">
+                    </td>
+                </tr>
+
+			</tr>
+
+
+		</table>
+
+
+	<div class="2">
+		<h1> this is the time evaluation</h1>
+		<table>
+			<tr>
+				<td><input type="number" id="hr1"></td><td><input type="number" id="min1"></td><td><input type="radio" name='s' value='AM' id='AP2'>AM</td><td><input type="radio" name='s' value='PM' id='AP1'>PM</td>
+			</tr>
+			<tr>
+				<td><input type="number" id="hr2"></td><td><input type="number" id="min2"></td><td><input type="radio" name='f' value='AM' id='AP4'>AM</td><td><input type="radio" name='f' value='PM' id='AP3'>PM</td>
+
+			</tr>
+			<tr><td><button type="button" onclick='eval_time()'>get time</button></td></tr>
+			<tr><td><input type="number" id='result'></td><td><input type='text' id='res_min'></tr>
+			
+
+
+
+		</table>
+	</div>
+
+
+	<div class="3">
+		<h1> this is calculating another time</h1>
+		<table>
+			<tr>
+				<td><input type="date" id="day"><td></td></td><td>time-hours<input type="number" id="hour"></td><td>time-min<input type="number" id='min'></td><td></td><td></td><td>hour<input type="number" id='h_shift' ></td><td></td><td>min<input type="number" id="m_shift"></td>
+			
+				<td><button type="button" id="shift" onclick="shift()">calculate</button></td>	<td><input type="text" id="res_date"></td>
+			</tr>
+        </table>
+    </div>
+
+
+
+
+
+</div>
+<script type="text/javascript" src="calendar.js"></script>
+</body>
+
+</html>
