@@ -1,0 +1,35 @@
+.container
+{
+	position:relative;
+	top:0px;
+	left:0px;
+	height:200%;
+	width:200%;
+}
+.CALCULATOR_CONTAINER
+{
+
+	position:absolute;
+	top:50px;
+	left:300px;
+	
+	height:500px;
+	border:2px solid black;
+	border-radius: 4px;
+} 
+.CALCULATOR_CONTAINER table th tr
+{
+	padding:5px;
+	text-align:center;
+
+
+}
+table
+{
+	padding:20px 20px 20px 20px;
+	padding-top: 80px;
+}
+input[type="text"],button
+{
+	border-radius:4px;
+}
