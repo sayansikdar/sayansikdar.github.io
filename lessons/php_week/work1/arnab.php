@@ -134,7 +134,7 @@ session_start();
 					</tr>				
 					<tr>
 						<td><span>Sex</span></td>
-						<td><input type="radio" name="sex" value="Male">&nbsp<span>Male</span>&nbsp&nbsp&nbsp<input type="radio" name="sex" value="Female" >&nbsp<span>Female</span><span class="2x2">* <?php echo $SexErr?> </span></td>
+						<td><input type="radio" name="sex" value="male" <?php if(isset($_SESSION["sexMale"])) echo"checked";?>>&nbsp<span>Male</span>&nbsp&nbsp&nbsp<input type="radio" name="sex" value="female" <?php if(isset($_SESSION['sexFemale'])) echo"checked";; ?> >&nbsp<span>Female</span><span class="2x2">* <?php echo $SexErr?> </span></td>
 					</tr>
 					<tr>
 						<td><span>Interest</span></td>
