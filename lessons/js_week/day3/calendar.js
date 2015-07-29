@@ -1,22 +1,16 @@
-function eval_Date()
-{
-	var date1=document.getElementById('1_date');
-	var date2=document.getElementById('2_date');
-	var res=document.getElementById('res');
-	var Date1=new Date(date1.value);
-	var Date2=new Date(date2.value);
-
-var d1=Date1.getTime();
-var d2=Date2.getTime();
-var result=Math.abs(d1-d2);
-var y1=Date1.getYear();
-var y2=Date2.getYear();
-var noofdays=result/(3600000*24);
-var no_of_years=noofdays/365;
-var noofdays=noofdays%365;
-var no_of_months=noofdays/30;
-var no_of_days=noofdays%30;
-res.value=res.value.slice(res.value.length)+ Math.floor(no_of_years)+" years "+Math.floor(no_of_months)+" months "+Math.floor(no_of_days)+" days ";
+function eval_Date(){
+var date1=document.getElementById('1_date'),date2=document.getElementById('2_date'),res=document.getElementById('res'),Date1=new Date(date1.value);Date2=new Date(date2.value),
+d1=Date1.getTime(),
+d2=Date2.getTime(),
+result=Math.abs((d1-d2)),
+y1=Date1.getYear(),
+y2=Date2.getYear(),
+noofdays=result/(3600000*24),
+no_of_years=noofdays/365,
+noofdays=noofdays%365,
+no_of_months=noofdays/30,
+no_of_days=noofdays%30,
+res.value=res.value.slice((res.value.length))+ Math.floor(no_of_years)+" years "+Math.floor(no_of_months)+" months "+Math.floor((no_of_days))+"days" ;
 }
 function eval_time()
 {
@@ -65,7 +59,7 @@ function eval_time()
 		{
 		hour1=Number(h1.value);
 		console.log(hour1);
-		console.log("hii1")
+		console.log("hii1");
      	}
 }
 
@@ -92,7 +86,7 @@ function eval_time()
 		{
 		hour2=Number(h2.value);
 		console.log(hour2);
-		console.log("hii1")
+		console.log("hii1");
      	}
 	}
 

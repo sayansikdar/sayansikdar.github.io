@@ -1,14 +1,11 @@
-
-      var counter_div;
-      var output=[];
-      var secondinput=[];
-      var firstinput=[];
+var counter_div,output=[],secondinput=[],firstinput=[],bacchadiv;
 
 
 
 function creatediv(process)
 {
 	var a=document.getElementById('output');
+  var firstnumber,secondnumber,inputbox;
 	
 
 
@@ -30,7 +27,7 @@ if(process=='addition')
 
 	for(counter_div=0;counter_div<23;counter_div++)
   {
-      var bacchadiv=document.createElement('div');
+       bacchadiv=document.createElement('div');
       bacchadiv.setAttribute("id","childdiv_Add"+counter_div);
       bacchadiv.setAttribute("class","bacchadiv_ADD");
       bacchadiv.style.height="80px";
@@ -54,7 +51,7 @@ if(process=='addition')
        
       firstinput[counter_div]=Math.floor(Math.random()*100);
 
-      var firstnumber=document.createElement('input');
+       firstnumber=document.createElement('input');
 
       firstnumber.setAttribute("type","text");
       firstnumber.setAttribute("id","first_in");
@@ -78,7 +75,7 @@ if(process=='addition')
    
      secondinput[counter_div]=Math.floor(Math.random()*100);
 
-      var secondnumber=document.createElement('input');
+      secondnumber=document.createElement('input');
       secondnumber.setAttribute("id","second_in");
 
        secondnumber.setAttribute("type","text");
@@ -100,7 +97,7 @@ if(process=='addition')
      console.log(output[counter_div]);
 
 
-      var inputbox=document.createElement('input');
+      inputbox=document.createElement('input');
       inputbox.setAttribute("type","text");
       inputbox.setAttribute("id",counter_div);
       inputbox.setAttribute("class","outputbox");
@@ -129,7 +126,7 @@ else if(process=='subs')
 	 
       for(counter_div=0;counter_div<23;counter_div++)
       {
-      var bacchadiv=document.createElement('div');
+      bacchadiv=document.createElement('div');
       bacchadiv.setAttribute("id","childdiv_Add"+counter_div);
       bacchadiv.setAttribute("class","bacchadiv_ADD");
 //style
@@ -155,7 +152,7 @@ else if(process=='subs')
        
       firstinput[counter_div]=Math.floor(Math.random()*100);
 
-      var firstnumber=document.createElement('input');
+      firstnumber=document.createElement('input');
       firstnumber.setAttribute("id","first_in");
 
       firstnumber.setAttribute("type","text");
@@ -164,7 +161,7 @@ else if(process=='subs')
 
       firstnumber.style.position="relative";
       firstnumber.style.Width="110%";
-      firstnumber.style.Height="33.33%"
+      firstnumber.style.Height="33.33%";
        firstnumber.style.marginLeft="5px";
 //style
       
@@ -174,7 +171,7 @@ else if(process=='subs')
     
      secondinput[counter_div]=Math.floor(Math.random()*100);
 
-      var secondnumber=document.createElement('input');
+       secondnumber=document.createElement('input');
        secondnumber.setAttribute("id","second_in");
        secondnumber.setAttribute("type","text");
        secondnumber.setAttribute("value",-secondinput[counter_div]);
@@ -192,7 +189,7 @@ else if(process=='subs')
         
       output[counter_div]=firstinput[counter_div]-secondinput[counter_div];
 
-      var inputbox=document.createElement('input');
+      inputbox=document.createElement('input');
       inputbox.setAttribute("class","outputbox");
       inputbox.setAttribute("type","text");
       inputbox.setAttribute("id",counter_div);
@@ -238,7 +235,7 @@ if(output[id_e]==id_l.value)
 {
 id_l.style.backgroundColor="green";
 }
-else if(id_l.value=='')
+else if(id_l.value==='')
 {
  id_l.style.backgroundColor="white";
 }

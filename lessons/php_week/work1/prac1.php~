@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+class Car {
+     function Car() {
+         $this->model = "VW";
+         echo "$this->model";
+     }
+}
+// create an object
+$herbie = new Car();
+
+// show object properties
+
+?>
+
+</body>
+</html>
