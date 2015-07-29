@@ -152,7 +152,7 @@ function toggle(e)
   	createelements({ElementType:"input",parent:"calci_wrapper1",id:"txt1",className:"txt1",type:"text"});
 createelements({ElementType:"input",parent:"buttons",number:23,type:"button",className:"bubu",value:["/","=","0",".","*","3","2","1","-","6","5","4","+","9","8","7","%","MOD","CAN","CLS","MR","M-","M+","MC"],id:["/","=","0",".","*","3","2","1","-","6","5","4","+","9","8","7","%","MOD","CAN","CLS","MR","M-","M+","MC"]});
     addstyles("calci_wrapper1",{position:"absolute",top:"80px",borderRadius:"6px",left:"50px",height:"400px",width:"80%",visibility:"hidden",backgroundColor:"#B0B0B0",border:"2px solid black",margin:"0",marginRight:"0"});
-    addstyles("txt1",{position:"absolute",top:"5%",left:"2%",borderRadius:"3px",width:"95%",backgroundColor:"#ffffff",height:"50px",textAlign:"right"})
+    addstyles("txt1",{position:"absolute",top:"5%",left:"2%",borderRadius:"3px",width:"95%",backgroundColor:"#ffffff",height:"50px",textAlign:"right"});
 
    
     addstyles("buttons",{position:"absolute",top:"25%",left:"11%",width:"80%",margin:"0",border:"0"});
@@ -210,7 +210,7 @@ createelements({ElementType:"input",parent:"buttons",number:23,type:"button",cla
 
 
 
-var input_arr=new Array()
+var input_arr=[];
 var a=document.getElementById('txt1');
 var counter=(a.value.length>0)?2:3;
 function aleartfunction()
@@ -231,11 +231,9 @@ function returnvaluefunction(i)
   var input=i.currentTarget.id;
 
 var sign;
-    var i;
-    var init;
 
- 
-a=document.getElementById('txt1');
+var init,b3; 
+var a=document.getElementById('txt1');
 
 //putting values to console
     //******************************************************************************************************************************************************************
@@ -261,7 +259,7 @@ a=document.getElementById('txt1');
 
     else if(input=="-")
     {
-    var b1=a.value.slice(a.value.length-1,a.value.length)
+    var b1=a.value.slice(a.value.length-1,a.value.length);
     console.log(b1);
     if(b1=='+'||b1=='-'||b1=='*'||b1=='%'||b1=='MOD'||b1=='.'||b1=='='||b1=='/')
     {
@@ -275,7 +273,7 @@ a=document.getElementById('txt1');
 
     else if(input=="*")
     {
-    var b2=a.value.slice(a.value.length-1,a.value.length)
+    var b2=a.value.slice(a.value.length-1,a.value.length);
     
     if(b2=='+'||b2=='-'||b2=='*'||b2=='%'||b2=='MOD'||b2=='.'||b2=='='||b2=='/')
     {
@@ -289,7 +287,7 @@ a=document.getElementById('txt1');
 
     else if(input=="/")
     {
-    var b3=a.value.slice(a.value.length-1,a.value.length)
+     b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='.'||b3=='='||b3=='/')
     {
       a.value=a.value.slice(0,a.value.length-1);
@@ -302,20 +300,20 @@ a=document.getElementById('txt1');
 
     else if(input=="%")
     {
-    b3=a.value.slice(a.value.length-1,a.value.length)
+    b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='.'||b3=='='||b3=='/')
     {
       a.value=a.value.slice(0,a.value.length-1);
     }
     
-    a.value=a.value+' '+"%"
+    a.value=a.value+' '+"%";
     }
 
 
 
     else if(input=="0")
     {
-    b3=a.value.slice(a.value.length-1,a.value.length)
+    b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='='||b3=='/')
     {
     a.value=a.value+' '+'0';
@@ -331,14 +329,14 @@ a=document.getElementById('txt1');
 
     else if(input==1)
     {
- b3=a.value.slice(a.value.length-1,a.value.length)
+ b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='='||b3=='/')
     {
     a.value=a.value+' '+'1';
     }
     else
     {
-      b3=a.value.slice(a.value.length-1,a.value.length)
+      b3=a.value.slice(a.value.length-1,a.value.length);
       a.value=Number(b3)*10+1;
     }
   
@@ -349,7 +347,7 @@ a=document.getElementById('txt1');
 
     else if(input==2)
     {
-    b3=a.value.slice(a.value.length-1,a.value.length)
+    b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='='||b3=='/')
     {
     a.value=a.value+' '+'2';
@@ -365,7 +363,7 @@ a=document.getElementById('txt1');
 
     else if(input==3)
     {
-  b3=a.value.slice(a.value.length-1,a.value.length)
+  b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='='||b3=='/')
     {
     a.value=a.value+' '+'3';
@@ -381,7 +379,7 @@ a=document.getElementById('txt1');
 
     else if(input==4)
     {
-  b3=a.value.slice(a.value.length-1,a.value.length)
+   b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='='||b3=='/')
     {
     a.value=a.value+' '+'4';
@@ -397,7 +395,7 @@ a=document.getElementById('txt1');
 
     else if(input==5)
     {
-  b3=a.value.slice(a.value.length-1,a.value.length)
+   b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='='||b3=='/')
     {
     a.value=a.value+' '+'5';
@@ -413,7 +411,7 @@ a=document.getElementById('txt1');
 
     else if(input==6)
     {
-  b3=a.value.slice(a.value.length-1,a.value.length)
+   b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='='||b3=='/')
     {
     a.value=a.value+' '+'6';
@@ -429,7 +427,7 @@ a=document.getElementById('txt1');
 
    else if(input==7)
    {
-b3=a.value.slice(a.value.length-1,a.value.length)
+    b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='='||b3=='/')
     {
     a.value=a.value+' '+'7';
@@ -445,7 +443,7 @@ b3=a.value.slice(a.value.length-1,a.value.length)
 
   else if(input==8)
    {
-  b3=a.value.slice(a.value.length-1,a.value.length)
+  b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='='||b3=='/')
     {
     a.value=a.value+' '+'8';
@@ -461,7 +459,7 @@ b3=a.value.slice(a.value.length-1,a.value.length)
 
   else if(input==9)
    {
-    b3=a.value.slice(a.value.length-1,a.value.length)
+    b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='='||b3=='/')
     {
     a.value=a.value+' '+'9';
@@ -477,7 +475,7 @@ b3=a.value.slice(a.value.length-1,a.value.length)
 
   else if(input==".")
    {
-    b3=a.value.slice(a.value.length-1,a.value.length)
+    b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='.'||b3=='='||b3=='/')
     {
       a.value=a.value.slice(0,a.value.length-1);
@@ -490,20 +488,20 @@ b3=a.value.slice(a.value.length-1,a.value.length)
  
    else if(input=="%")
   {
-    b3=a.value.slice(a.value.length-1,a.value.length)
+    b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='.'||b3=='='||b3=='/')
     {
       a.value=a.value.slice(0,a.value.length-1);
     }
     
-    a.value=a.value+' '+'%'
+    a.value=a.value+' '+'%';
   }
 
 
 
   else if(input=="M")
   {
-    b3=a.value.slice(a.value.length-1,a.value.length)
+    b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='.'||b3=='='||b3=='/')
     {
       a.value=a.value.slice(0,a.value.length-1);
@@ -538,19 +536,19 @@ b3=a.value.slice(a.value.length-1,a.value.length)
    }
 
 
-   else if(input="MC")
+   else if(input=="MC")
    {
        memory=0;
    }
 
 
-   else if(input="M-")
+   else if(input=="M-")
    {
 
    }
 
 
-   else if(input="M+")
+   else if(input=="M+")
    {
      
    }
@@ -627,7 +625,7 @@ function parsefunction()
 {
   var sign;
   var result;
-  var s=new String();
+  var s;
   s=a.value.slice(0,a.value.length);
   console.log(s);
   input_arr=s.split(' ');
@@ -812,17 +810,13 @@ var y1=Date1.getYear();
 var y2=Date2.getYear();
 var noofdays=result/(3600000*24);
 var no_of_years=noofdays/365;
-var noofdays=noofdays%365;
+noofdays=noofdays%365;
 var no_of_months=noofdays/30;
 var no_of_days=noofdays%30;
 res.value=Math.floor(no_of_years)+ " years " + Math.floor(no_of_months) + " months " + Math.floor(no_of_days) +" days ";
 console.log(no_of_years);
 console.log(no_of_months);
 console.log(no_of_months);
-}
-function eval_time()
-{
-
 }
 
 
@@ -867,7 +861,7 @@ function eval_time(e)
     {
     hour1=Number(h1.value);
     console.log(hour1);
-    console.log("hii1")
+    console.log("hii1");
       }
 }
 
@@ -894,7 +888,7 @@ function eval_time(e)
     {
     hour2=Number(h2.value);
     console.log(hour2);
-    console.log("hii1")
+    console.log("hii1");
       }
   }
 

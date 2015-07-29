@@ -1,5 +1,5 @@
 
-var input_arr=new Array()
+var input_arr=[];
 var a=document.getElementById('t_box');
 var counter=(a.value.length>0)?2:3;
 function aleartfunction()
@@ -19,6 +19,7 @@ function returnvaluefunction(input)
 var sign;
     var i;
     var init;
+    var b3;
 
  
 
@@ -47,7 +48,7 @@ var sign;
 
     else if(input=="-")
     {
-    var b1=a.value.slice(a.value.length-1,a.value.length)
+    var b1=a.value.slice(a.value.length-1,a.value.length);
     console.log(b1);
     if(b1=='+'||b1=='-'||b1=='*'||b1=='%'||b1=='MOD'||b1=='.'||b1=='='||b1=='/')
     {
@@ -61,7 +62,7 @@ var sign;
 
     else if(input=="*")
     {
-    var b2=a.value.slice(a.value.length-1,a.value.length)
+    var b2=a.value.slice(a.value.length-1,a.value.length);
     
     if(b2=='+'||b2=='-'||b2=='*'||b2=='%'||b2=='MOD'||b2=='.'||b2=='='||b2=='/')
     {
@@ -75,7 +76,7 @@ var sign;
 
     else if(input=="/")
     {
-    var b3=a.value.slice(a.value.length-1,a.value.length)
+     b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='.'||b3=='='||b3=='/')
     {
       a.value=a.value.slice(0,a.value.length-1);
@@ -88,20 +89,20 @@ var sign;
 
     else if(input=="%")
     {
-    b3=a.value.slice(a.value.length-1,a.value.length)
+    b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='.'||b3=='='||b3=='/')
     {
       a.value=a.value.slice(0,a.value.length-1);
     }
     
-    a.value=a.value+' '+"%"
+    a.value=a.value+' '+"%";
     }
 
 
 
     else if(input=="0")
     {
-    b3=a.value.slice(a.value.length-1,a.value.length)
+    b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='='||b3=='/')
     {
     a.value=a.value+' '+'0';
@@ -117,14 +118,14 @@ var sign;
 
     else if(input==1)
     {
- b3=a.value.slice(a.value.length-1,a.value.length)
+ b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='='||b3=='/')
     {
     a.value=a.value+' '+'1';
     }
     else
     {
-      b3=a.value.slice(a.value.length-1,a.value.length)
+      b3=a.value.slice(a.value.length-1,a.value.length);
       a.value=Number(b3)*10+1;
     }
   
@@ -135,7 +136,7 @@ var sign;
 
     else if(input==2)
     {
-    b3=a.value.slice(a.value.length-1,a.value.length)
+    b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='='||b3=='/')
     {
     a.value=a.value+' '+'2';
@@ -151,7 +152,7 @@ var sign;
 
     else if(input==3)
     {
-  b3=a.value.slice(a.value.length-1,a.value.length)
+  b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='='||b3=='/')
     {
     a.value=a.value+' '+'3';
@@ -167,7 +168,7 @@ var sign;
 
     else if(input==4)
     {
-  b3=a.value.slice(a.value.length-1,a.value.length)
+  b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='='||b3=='/')
     {
     a.value=a.value+' '+'4';
@@ -183,7 +184,7 @@ var sign;
 
     else if(input==5)
     {
-  b3=a.value.slice(a.value.length-1,a.value.length)
+  b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='='||b3=='/')
     {
     a.value=a.value+' '+'5';
@@ -199,7 +200,7 @@ var sign;
 
     else if(input==6)
     {
-  b3=a.value.slice(a.value.length-1,a.value.length)
+  b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='='||b3=='/')
     {
     a.value=a.value+' '+'6';
@@ -215,7 +216,7 @@ var sign;
 
    else if(input==7)
    {
-b3=a.value.slice(a.value.length-1,a.value.length)
+b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='='||b3=='/')
     {
     a.value=a.value+' '+'7';
@@ -231,7 +232,7 @@ b3=a.value.slice(a.value.length-1,a.value.length)
 
   else if(input==8)
    {
-  b3=a.value.slice(a.value.length-1,a.value.length)
+  b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='='||b3=='/')
     {
     a.value=a.value+' '+'8';
@@ -247,7 +248,7 @@ b3=a.value.slice(a.value.length-1,a.value.length)
 
   else if(input==9)
    {
-    b3=a.value.slice(a.value.length-1,a.value.length)
+    b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='='||b3=='/')
     {
     a.value=a.value+' '+'9';
@@ -263,7 +264,7 @@ b3=a.value.slice(a.value.length-1,a.value.length)
 
   else if(input==".")
    {
-    b3=a.value.slice(a.value.length-1,a.value.length)
+    b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='.'||b3=='='||b3=='/')
     {
       a.value=a.value.slice(0,a.value.length-1);
@@ -276,20 +277,20 @@ b3=a.value.slice(a.value.length-1,a.value.length)
  
    else if(input=="%")
   {
-    b3=a.value.slice(a.value.length-1,a.value.length)
+    b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='.'||b3=='='||b3=='/')
     {
       a.value=a.value.slice(0,a.value.length-1);
     }
     
-    a.value=a.value+' '+'%'
+    a.value=a.value+' '+'%';
   }
 
 
 
   else if(input=="M")
   {
-    b3=a.value.slice(a.value.length-1,a.value.length)
+    b3=a.value.slice(a.value.length-1,a.value.length);
     if(b3=='+'||b3=='-'||b3=='*'||b3=='%'||b3=='MOD'||b3=='.'||b3=='='||b3=='/')
     {
       a.value=a.value.slice(0,a.value.length-1);
@@ -324,19 +325,19 @@ b3=a.value.slice(a.value.length-1,a.value.length)
    }
 
 
-   else if(input="MC")
+   else if(input=="MC")
    {
        memory=0;
    }
 
 
-   else if(input="M-")
+   else if(input=="M-")
    {
 
    }
 
 
-   else if(input="M+")
+   else if(input=="M+")
    {
      
    }
@@ -413,7 +414,7 @@ function parsefunction()
 {
   var sign;
   var result;
-  var s=new String();
+  var s;
   s=a.value.slice(0,a.value.length);
   console.log(s);
   input_arr=s.split(' ');
