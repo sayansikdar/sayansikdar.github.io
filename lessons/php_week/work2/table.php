@@ -51,14 +51,14 @@ $result = mysqli_query($conn,$sql);
 
 ?>
 <table border="1px">
-<tr><td>ID</td><td>&nbsp  &nbsp </td><td>NAME</td><td>&nbsp  &nbsp </td><td>EMAIL</td><td>&nbsp  &nbsp </td><td>MOBILE</td><td>&nbsp  &nbsp </td><td>SEX</td><td>&nbsp  &nbsp </td><td>INTEREST</td><td>&nbsp  &nbsp </td><td>COUNTRY</td><td>&nbsp  &nbsp </td><td>ADRESS</td><td>&nbsp  &nbsp </td> <td>&nbsp  &nbsp </td></tr>
+<tr><td>ID</td><td>&nbsp  &nbsp </td><td>NAME</td><td>&nbsp  &nbsp </td><td>EMAIL</td><td>&nbsp  &nbsp </td><td>MOBILE</td><td>&nbsp  &nbsp </td><td>SEX</td><td>&nbsp  &nbsp </td><td>INTEREST</td><td>&nbsp  &nbsp </td><td>COUNTRY</td><td>&nbsp  &nbsp </td><td>STATE</td><td>&nbsp  &nbsp </td><td>ADRESS</td><td>&nbsp  &nbsp </td> <td>&nbsp  &nbsp </td></tr>
 <?php
 
 if(mysqli_num_rows($result) > 0) 
 {
 	while($row=mysqli_fetch_assoc($result))
 	{
-	 echo"<tr>"."<td>".$row["id"]."</td>"."<td>"." "."</td>"."<td>".$row["Name"]."</td>"."<td>"." "."</td>"."<td>".$row["Email"]."</td>"."<td>"." "."</td>"."<td>".$row["Mobile"]."</td>"."<td>"." "."</td>"."<td>".$row["Sex"]."</td>"."<td>"." "."</td>"."<td>".$row["Interest"]."</td>"."<td>"." "."</td>"."<td contenteditable='true'>".$row["Country"]."</td>"."<td>"." "."</td>"."<td>".$row["Address"]."</td>"."<td><a href='del.php?id=$row[id]'>DELETE</a></td>"."<td><a href='edit.php?id=$row[id]'>EDIT</a></td>"."</tr>";
+	 echo"<tr>"."<td>".$row["id"]."</td>"."<td>"." "."</td>"."<td>".$row["Name"]."</td>"."<td>"." "."</td>"."<td>".$row["Email"]."</td>"."<td>"." "."</td>"."<td>".$row["Mobile"]."</td>"."<td>"." "."</td>"."<td>".$row["Sex"]."</td>"."<td>"." "."</td>"."<td>".$row["Interest"]."</td>"."<td>"." "."</td>"."<td contenteditable='true'>".$row["Country"]."</td>"."<td>"." "."</td>"."<td>".$row["State"]."</td>"."<td>".""."</td>"."<td>".$row["Address"]."</td>"."<td><a href='del.php?id=$row[id]'>DELETE</a></td>"."<td><a href='edit.php?id=$row[id]'>EDIT</a></td>"."</tr>";
     }
 
 }
