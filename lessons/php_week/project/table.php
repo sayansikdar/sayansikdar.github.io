@@ -9,10 +9,10 @@
   	{
       button_ref=button_ref.parentElement;
     }
-    console.log(button_ref.nodeName);
+   // console.log(button_ref.nodeName);
     if(button_ref.nodeName=='FORM')
-     {
-     var id=button_ref.name.value;
+  {
+     var id=button_ref.id.value;
      var name = button_ref.name.value;
      var email = button_ref.email.value;
      var phnum = button_ref.phnum.value;
@@ -35,17 +35,19 @@
             var obj = JSON.parse(xmlhttp.responseText);
 
             for (var i in obj) 
-                 form[i].value =obj[i];
+                 button_ref[i].value =obj[i];
          }
      };
-    var parameters = "id="+id+"&name="+name+"&email="+email+"&phnum="+phnum+"&interest="+interest+"&sex="+sex+"&country="+country+"&state="+state+"&address="+address+"&edit=true";
-    console.log(parameters);
+   var parameters = "id="+id+"&name="+name+"&email="+email+"&phnum="+phnum+"&interest="+interest+"&sex="+sex+"&country="+country+"&state="+state+"&address="+address;
+    //var parameters= "name=sayan";
     xmlhttp.open("POST", "edit.php", true);
     xmlhttp.setRequestHeader("Content-type",
         "application/x-www-form-urlencoded");
     xmlhttp.send(parameters);
-  }   
+     
   }
+}
+
 function delet(button_ref)
 {
 	while(button_ref.tagName!=="FORM")
@@ -60,8 +62,10 @@ function delet(button_ref)
     if (window.XMLHttpRequest) xmlhttp = new XMLHttpRequest();
     else xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
     
-    xmlhttp.onreadystatechange = function() {
-        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+    xmlhttp.onreadystatechange = function() 
+    {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) 
+        {
         	console.log(xmlhttp.responseText);
               if(xmlhttp.responseText=="success")
                document.body.removeChild(button_ref);

@@ -25,11 +25,12 @@ $country=$_POST["country"];
 $state=$_POST["state"];
 $address=$_POST["address"];
 
-$sql = "UPDATE subscriptiondata SET Name='$name',Email='$email',Mobile='$phnum',Sex='$sex',Interest='$interest',Country='$country' State='$state' Address='address'  WHERE id='$id"; 
+$sql = "UPDATE subscriptiondata SET Name='$name',Email='$email',Mobile='$phnum',Sex='$sex',Interest='$interest',Country='$country', State='$state' ,Address='address'  WHERE id='$id'";
 if (mysqli_query($conn, $sql))
  {
 
-     $output='{"name":"'.$name.'","phnum":"'.$phnum.'","email":"'.$email.'","sex":"'.$sex.'","interest":"'.$interest.'"country":"'.$country.'","state":"'.$state.'","address":"'.$address.'"}';  
+     $output='{"name":"'.$name.'","phnum":"'.$phnum.'","email":"'.$email.'","sex":"'.$sex.'","interest":"'.$interest.'","country":"'.$country.'","state":"'.$state.'","address":"'.$address.'"}';  
+
      echo $output;
   }
 }
